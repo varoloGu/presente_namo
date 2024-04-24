@@ -1,0 +1,89 @@
+body{
+    background-color: #D93D3D; /*#7D4AD9*/ /*#B95DF0*/
+    margin: 0;
+    padding: 0;
+    color: #F2F2F2;
+}
+.container{
+    max-width: 500px;
+    padding: 30px;
+    margin: 0  auto;
+    border-radius: 10px;
+    background-color: #F2A7A7;
+}
+
+#foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo{
+    font-family: "Cabin", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #F8F8FF;
+}
+.grupo-formulario{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #A60303 ;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #800000;
+  }
+
+.botao_mentirosa { 
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #800000;
+  }
+
+#botao_mentirosa {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #F2F2F2;
+}
+
+#seta{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}

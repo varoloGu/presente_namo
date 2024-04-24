@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dica da Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilo para ocultar as dicas inicialmente */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+            margin: 10px;
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #F2F2F2;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 100%;
+            background-color:#A60303;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+            opacity: 1; /* Inicialmente visível */
+        }
+        .titulo_dica {
+            margin: 10px;
+            font-family: "Lato", sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #F2F2F2;
+        }
+        .usuario{
+            margin: 10px;
+            font-family: "Cabin", sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #F2F2F2;
+        }
+        .senha {
+            margin: 10px;
+            font-family: "Cabin", sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo_dica">Dicas do Login:</h1>
+    <h2 class="usuario">Usuário:</h2>
+    <ul>
+        <li><div class="overlay"></div>São 10 caracteres;</li>
+        <li><div class="overlay"></div>Todos os caracteres são minúsculcos e sem espaço;</li>
+        <li><div class="overlay"></div>São dois nomes;</li>
+        <li><div class="overlay"></div>Você odeia um deles.</li>
+    </ul>
+    <h2 class="senha">Senha:</h2>
+    <ul>
+        <li><div class="overlay"></div>É uma data importante para nós dois;</li>
+        <li><div class="overlay"></div>São poucos dias antes do dia do saci.</li>
+    </ul>
+    <a href="index.html"><img id="seta" src="fotos/seta2.svg" alt="seta de voltar"></a>
+
+    <script>
+        const overlays = document.querySelectorAll('.overlay');
+        overlays.forEach(overlay => {
+            overlay.addEventListener('click', () => {
+                overlay.style.opacity = '0'; // Ao clicar, o fundo desaparece
+            });
+        });
+    </script>
+</body>
+</html>
